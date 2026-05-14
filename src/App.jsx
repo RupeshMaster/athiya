@@ -25,6 +25,10 @@ function ScrollToTop() {
 }
 
 function App() {
+  useEffect(() => {
+    document.title = "Athiya";
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
