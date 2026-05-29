@@ -1,4 +1,7 @@
 import { Target, Eye, Shield } from 'lucide-react';
+import Logo from '../assets/Images/Logo.jpeg'
+import Founder from '../assets/Images/Founder.jpeg'
+import Architech from '../assets/Images/Architech.jpeg'
 
 export default function About() {
   return (
@@ -14,18 +17,18 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Our Legacy</h2>
-              <p className="text-slate-600 mb-6 leading-relaxed">
+              <h2 className="text-3xl font-bold mb-6">At GRAZIA Inspired</h2>
+              <p className="text-slate-600 mb-6 leading-relaxed text-justify">
                 At Athiya Inspired, we believe that real estate is not just about buying and selling land; it's about building a foundation for the future. With over a decade of experience, we have redefined premium real estate by focusing on strategic locations, clear titles, and sustainable development.
               </p>
-              <p className="text-slate-600 leading-relaxed">
-                Our journey started with a simple vision: to provide investors and families with properties they can trust. Today, we are proud to be a driving force in some of the most sought-after development zones, including Maha Mumbai and the pristine coastal regions.
+              <p className="text-slate-600 leading-relaxed text-justify">
+                Our journey started with a simple vision: to provide investors and families with properties they can trust. Today, we are proud to be a driving force in some of the most sought-after development zones, including Third Mumbai and nearest area.
               </p>
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" 
-                alt="Office space" 
+                src={Logo} 
+                alt="Logo" 
                 className="rounded-2xl shadow-xl"
               />
             </div>
@@ -66,6 +69,71 @@ export default function About() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Our Founder */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            {/* Text */}
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3 block">
+                Leadership
+              </span>
+              <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                Our Founder
+              </h2>
+              <div className="w-12 h-1 bg-blue-600 rounded mb-6" />
+                <p className="text-slate-600 leading-relaxed text-lg text-justify">
+                  Founder Premanand Nathu Kamble — those who received good qualities from
+                  their Mother &amp; Father — is known for his honesty, strong relationships
+                  with people, and a heartfelt commitment to serving others. His values of
+                  trust, transparency, and meaningful human connection form the foundation
+                  of the company's vision and growth.
+                </p>
+              </div>
+
+              {/* Image */}
+              <div className="flex justify-center">
+                <img
+                  src={Founder}
+                  alt="Founder Premanand Nathu Kamble"
+                  className="rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-[4/5]"
+                />
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      {/* Lead Architech */}
+      <section className="py-20 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="flex justify-center">
+              <img
+                src={Architech}
+                alt="Leading Architech "
+                className="rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-[4/5]"
+              />
+            </div>
+            {/* Text */}
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3 block">
+                Leadership
+              </span>
+              <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                Our Leading Architech
+              </h2>
+              <div className="w-12 h-1 bg-blue-600 rounded mb-6" />
+                <p className="text-slate-600 leading-relaxed text-lg text-justify">
+                  Shraddha Badekar with years of expertise in Architectural planning and government sector work, She brings trust, experience and efficiency to every projec
+                </p>
+              </div>
+            </div>
+          </div>
       </section>
     </div>
   );

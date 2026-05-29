@@ -49,11 +49,11 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span>Kamdhenu Commerz, Kharghar, Navi Mumbai, India</span>
+                <span>10/B, Mahadev Patil CHS, Ghatla Village Chembur, Mumbai, Maharashtra</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
-                <span>+91 98339 31199</span>
+                <span>+91 9920081867</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent shrink-0" />

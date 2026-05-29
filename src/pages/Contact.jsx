@@ -98,7 +98,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">Office Location</h4>
-                    <p className="text-slate-600">Kamdhenu Commerz, Sector 14,<br/>Kharghar, Navi Mumbai, Maharashtra</p>
+                    <p className="text-slate-600">110/B, Mahadev Patil CHS, Ghatla Village<br/>Chembur, Mumbai, Maharashtra</p>
                   </div>
                 </div>
                 
@@ -108,8 +108,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">Phone Number</h4>
-                    <p className="text-slate-600">+91 98339 31199</p>
-                    <p className="text-slate-600">+91 91527 31199</p>
+                    <p className="text-slate-600">+91 9920081867</p>
+                    {/* <p className="text-slate-600">+91 91527 31199</p> */}
                   </div>
                 </div>
                 

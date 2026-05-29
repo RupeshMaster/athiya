@@ -56,7 +56,7 @@ export default function ProjectDetail() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+              {/* <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
                 <h3 className="text-2xl font-bold mb-6">Key Features & Amenities</h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {project.features.map((feature, index) => (
@@ -66,7 +66,7 @@ export default function ProjectDetail() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </div>
 
             <div className="lg:col-span-1">
