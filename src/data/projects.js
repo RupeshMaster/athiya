@@ -1,3 +1,5 @@
+import Uran from '../assets/Location/Uran_main.jpeg'
+
 export const projects = [
   {
     id: "farm-dale",
@@ -21,12 +23,12 @@ export const projects = [
   },
   {
     id: "maha-mumbai-hub",
-    title: "Maha Mumbai Hub",
+    title: "Third Mumbai (KSC New Town)",
     location: "Navi Mumbai",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
     description: "Strategic commercial and residential plots near the upcoming international airport.",
     status: "Completed",
-    longDescription: "Positioned at the epicenter of the new growth corridor, Maha Mumbai Hub offers unparalleled connectivity and investment potential. Situated adjacent to the upcoming Navi Mumbai International Airport and the Atal Setu infrastructure, these mixed-use plots guarantee massive capital appreciation and top-tier infrastructural benefits.",
+    longDescription: "Positioned at the epicenter of the new growth corridor, Third Mumbai Hub offers unparalleled connectivity and investment potential. Situated adjacent to the Navi Mumbai International Airport and the Atal Setu infrastructure, these mixed-use plots guarantee massive capital appreciation and top-tier infrastructural benefits.",
     features: ["Commercial Zones", "Airport Proximity", "Wide Access Roads", "High ROI Potential", "Smart Grid Layout"]
   },
   {
@@ -58,5 +60,14 @@ export const projects = [
     status: "Completed",
     longDescription: "Riverside Residencies is a completed flagship residential project offering luxury apartments along the Panvel riverfront. Residents enjoy world-class amenities, stunning riverside promenades, and a peaceful environment that feels miles away from the city, despite being highly connected to major transit hubs.",
     features: ["Riverfront Promenade", "Infinity Pool", "Gymnasium", "Children's Play Area", "Amphitheater"]
+  },
+  {
+    id: "Uran",
+    title:"Uran",
+    location:"Uran",
+    image: Uran,
+    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers.",
+    status:"Planning",
+    longDescription:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.",
   }
 ];
