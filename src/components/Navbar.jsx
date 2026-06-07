@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Building2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import Logo from '../assets/Images/Favicon.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-2">
-            <Building2 className="h-8 w-8 text-accent" />
-            <span className="font-serif font-bold text-2xl text-primary">Athiya<span className="text-accent">.</span></span>
+            {/* <Building2 className="h-8 w-8 text-accent" /> */}
+            <img src={Logo} alt="Grazia logo" className="h-8 w-8 object-contain" />
+            <span className="font-serif font-bold text-2xl text-primary">Grazia</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -38,6 +40,11 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex items-center space-x-6 border-l border-slate-200 pl-6 ml-2">
+              {user && user.isAdmin && (
+                <Link to="/admin" className={`text-sm font-medium transition-colors hover:text-accent ${isActive('/admin') ? 'text-accent' : 'text-slate-600'}`}>
+                  Admin Dashboard
+                </Link>
+              )}
               <Link to="/contact" className={`text-sm font-medium transition-colors hover:text-accent ${isActive('/contact') ? 'text-accent' : 'text-slate-600'}`}>
                 Contact Us
               </Link>
@@ -79,6 +86,15 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            {user && user.isAdmin && (
+              <Link
+                to="/admin"
+                onClick={() => setIsOpen(false)}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/admin') ? 'text-accent bg-slate-50' : 'text-slate-600 hover:text-accent hover:bg-slate-50'}`}
+              >
+                Admin Dashboard
+              </Link>
+            )}
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}

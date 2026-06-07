@@ -1,7 +1,8 @@
 import ProjectCard from '../components/ProjectCard';
-import { projects } from '../data/projects';
+import { useProjects } from '../context/ProjectContext';
 
 export default function Projects() {
+  const { projects } = useProjects();
   return (
     <div className="pt-20">
       <div className="bg-primary py-20 text-center">

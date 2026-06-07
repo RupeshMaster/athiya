@@ -1,4 +1,4 @@
-import Uran from '../assets/Location/Uran_main.jpeg'
+
 
 export const projects = [
   {
@@ -61,13 +61,4 @@ export const projects = [
     longDescription: "Riverside Residencies is a completed flagship residential project offering luxury apartments along the Panvel riverfront. Residents enjoy world-class amenities, stunning riverside promenades, and a peaceful environment that feels miles away from the city, despite being highly connected to major transit hubs.",
     features: ["Riverfront Promenade", "Infinity Pool", "Gymnasium", "Children's Play Area", "Amphitheater"]
   },
-  {
-    id: "Uran",
-    title:"Uran",
-    location:"Uran",
-    image: Uran,
-    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers.",
-    status:"Planning",
-    longDescription:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.",
-  }
 ];

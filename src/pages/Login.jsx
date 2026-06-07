@@ -22,8 +22,13 @@ export default function Login() {
     setIsLoading(true);
 
     try {
-      await login(email, password);
-      navigate(from, { replace: true });
+      const loggedInUser = await login(email, password);
+      // Admins always land on the dashboard, regardless of where they came from
+      if (loggedInUser?.isAdmin) {
+        navigate('/admin', { replace: true });
+      } else {
+        navigate(from, { replace: true });
+      }
     } catch (err) {
       setError(err.message || 'Failed to login');
     } finally {

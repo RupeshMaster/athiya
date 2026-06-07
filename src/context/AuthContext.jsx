@@ -12,7 +12,7 @@ export function AuthProvider({ children }) {
 
   // You will set this to your Render URL in production (e.g. https://your-app.onrender.com/api)
   // For local development, assuming the server runs on port 5000
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
 
   useEffect(() => {
     // Check if user is logged in from localStorage

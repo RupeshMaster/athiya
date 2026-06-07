@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Building2, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import Logo from '../assets/Images/Favicon.png'
 
 export default function Footer() {
   return (
@@ -9,8 +10,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <Building2 className="h-8 w-8 text-accent" />
-              <span className="font-serif font-bold text-2xl text-white">Athiya<span className="text-accent">.</span></span>
+              <img src={Logo} alt="Grazia logo" className="h-8 w-8 object-contain" />
+              <span className="font-serif font-bold text-2xl text-white">Grazia</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6">
               Redefining premium real estate and land development with trust, transparency, and architectural excellence.
@@ -64,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Athiya Developers Inspired. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Grazia Developers Inspired. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

@@ -2,9 +2,10 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
-import { projects } from '../data/projects';
+import { useProjects } from '../context/ProjectContext';
 
 export default function Home() {
+  const { projects } = useProjects();
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -19,7 +20,7 @@ export default function Home() {
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
-          <span className="text-accent font-medium tracking-wider uppercase text-sm mb-4 block">Welcome to Athiya Inspired</span>
+          <span className="text-accent font-medium tracking-wider uppercase text-sm mb-4 block">Welcome to Grazia Inspired</span>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Redefining <span className="text-accent italic">Premium</span> Living
           </h1>

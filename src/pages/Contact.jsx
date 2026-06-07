@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Send, ChevronDown, Lock, Loader2, CheckCircle2 } from 'lucide-react';
-import { projects } from '../data/projects';
+import { useProjects } from '../context/ProjectContext';
 import { useAuth } from '../context/AuthContext';
 
 export default function Contact() {
+  const { projects } = useProjects();
   const location = useLocation();
   const { user } = useAuth();
   const [enquiryFor, setEnquiryFor] = useState('General Enquiry');
@@ -19,7 +20,7 @@ export default function Contact() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
 
   useEffect(() => {
     if (location.state?.projectTitle) {

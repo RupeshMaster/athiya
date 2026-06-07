@@ -1,0 +1,34 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    # Expose to host for debugging with a Mongo client (optional)
+    ports:
+      - "27017:27017"
+
+  backend:
+    build: ./server
+    restart: unless-stopped
+    depends_on:
+      - mongo
+    environment:
+      PORT: 5001
+      MONGO_URI: mongodb://mongo:27017/athiya-dev
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      CLIENT_URL: "*"
+      NODE_ENV: production
+    ports:
+      - "5001:5001"
+
+  frontend:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  mongo-data:
